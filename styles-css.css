@@ -360,9 +360,51 @@ feature p {
 
 .text-robot {
     font-size: 1.2rem;
+    color: black;
+    
 
 
 }
+
+.robot-container {
+    display: flex;
+    align-items: stretch; /* Ensures both items take the full height */
+    gap: 20px; /* Space between text and image */
+}
+
+.donation-card2, .robot-background {
+    flex: 1; /* Ensures both take equal space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.donation-card2 {
+    background-color: #f8f8f8; /* Light background for contrast */
+    border-radius: 10px;
+    background-color: #ffffff; /* Grayish background behind the robot */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.robot-background {
+    background-color: #ffffff; /* Grayish background behind the robot */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.robot-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 
 .donation-card {
     background-color: white;
