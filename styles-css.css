@@ -366,6 +366,50 @@ feature p {
 
 }
 
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9; /* Adjust this to match your theme */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black; /* Adjust this to match your theme */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Adjust this to match your theme */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+/* If your active class has special styling, you might need this */
+.dropdown-content a.active {
+    /* Copy your active class styles here */
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+
 .robot-container {
     display: flex;
     align-items: stretch; /* Ensures both items take the full height */
