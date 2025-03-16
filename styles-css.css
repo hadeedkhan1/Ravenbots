@@ -358,6 +358,12 @@ feature p {
     grid-column: 2;
 }
 
+.text-robot {
+    font-size: 1.2rem;
+
+
+}
+
 .donation-card {
     background-color: white;
     padding: 2rem;
