@@ -418,6 +418,40 @@ feature p {
     transform: rotate(180deg);
 }
 
+
+/* Square Button with Rounded Corners */
+.square-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 70px;
+    border-radius: 12px; /* Adjust for more or less rounding */
+    background-color: #3498db; /* Change to match your color theme */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.square-button:hover {
+    background-color: #2980b9; /* Darker shade for hover effect */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.square-button i {
+    font-size: 24px;
+    margin-bottom: 5px; /* Space between icon and text */
+}
+
+.square-button span {
+    font-size: 14px;
+    text-transform: uppercase; /* Optional - makes text uppercase */
+}
+
 /* If your active class has special styling */
 .dropdown-content a.active {
     /* Copy your active class styles here */
