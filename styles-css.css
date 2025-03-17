@@ -226,7 +226,13 @@ section p {
     max-width: 500px;
 }
 
+.donate-div:hover {
+    transform: translateY(-5px);
+}
 
+.donation-card:hover {
+    transform: translateY(-5px);
+}
 
 
 .goal-perspective:hover {
@@ -404,7 +410,6 @@ footer a:hover {
 
     display: flex;
     justify-content: center;
-    
     flex-wrap: wrap;
 }
 
