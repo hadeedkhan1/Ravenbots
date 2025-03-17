@@ -201,6 +201,34 @@ section p {
     transition: transform 0.3s ease;
 }
 
+
+.donation-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px auto; /* Changed from margin: 10px to margin: 10px auto */
+    width: 90%;
+    max-width: 750px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.donate-div {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px auto; /* Changed from margin: 10px to margin: 10px auto */
+    width: 90%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+
+
+
 .goal-perspective:hover {
     transform: translateY(-5px);
 }
@@ -371,6 +399,15 @@ footer a:hover {
     flex-wrap: wrap;
     padding: 20px;
 }
+
+.donation-info {
+
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+}
+
 
 .donation-card2 {
     background-color: rgba(255, 255, 255, 0.1);
