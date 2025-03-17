@@ -62,6 +62,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav li {
@@ -536,4 +537,119 @@ footer .social-links img {
 
 footer .social-links a {
     margin: 0 15px; 
+}
+
+.impact-section {
+    padding: 80px 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.impact-section h2 {
+    color: #66cdaa;
+    font-size: 2.8em;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.impact-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.impact-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.impact-item i {
+    font-size: 4em;
+    color: #66cdaa;
+    margin-bottom: 20px;
+}
+
+.impact-item h3 {
+    color: #fff;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.impact-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #ddd;
+    flex-grow: 1;
+}
+
+.secondary-button {
+    background-color: #66cdaa;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.secondary-button:hover {
+    background-color: #52a98a;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .impact-section {
+        padding: 60px 20px;
+    }
+
+    .impact-section h2 {
+        font-size: 2.3em;
+    }
+
+    .impact-item {
+        padding: 25px;
+    }
+
+    .impact-item i {
+        font-size: 3.5em;
+    }
+
+    .impact-item h3 {
+        font-size: 1.6em;
+    }
+
+    .impact-item p {
+        font-size: 0.95em;
+    }
+
+    .secondary-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+
+b {
+    font-size: 1.1em;
 }
