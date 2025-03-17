@@ -715,3 +715,211 @@ b {
 .spon {
     text-align: center;
 }
+
+.sponsor-benefits {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sponsor-benefits h2 {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    color: #66cdaa;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.benefit-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.benefit-card p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.sponsorship-tiers {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sponsorship-tiers h2 {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    color: #66cdaa;
+}
+
+.tiers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tier-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tier-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.tier-header {
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+}
+
+.tier-header.silver {
+    background-color: #777;
+}
+
+.tier-header.gold {
+    background-color: #d4af37;
+}
+
+.tier-header.platinum {
+    background-color: #2a7d2a;
+}
+
+.tier-header h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.tier-header .price {
+    font-size: 1.2em;
+}
+
+.tier-features {
+    list-style: none;
+    padding: 20px;
+    text-align: left;
+}
+
+.tier-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tier-features li:last-child {
+    border-bottom: none;
+}
+
+.highlighted {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    color: #66cdaa;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.secondary-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 1px solid rgba(255,255,255,0.2);
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px; 
+}
+
+.secondary-button:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-3px);
+}
+
+.tier-card {
+    max-width: 350px; 
+    margin: 15px auto;
+}
+
+.tier-features {
+    padding: 20px;
+    text-align: center; 
+}
+
+.tier-features li {
+    text-align: left; 
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tier-features li:last-child {
+    border-bottom: none;
+}
