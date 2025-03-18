@@ -1094,3 +1094,37 @@ b {
     }
 }
 
+.gallery-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.gallery-row:last-child {
+    margin-bottom: 0;
+}
+
+.gallery-image {
+    max-width: 20%; 
+    height: auto;
+    margin: 0 10px; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.outreach3-wide {
+    max-width: 45%; 
+}
+
+/* I WROTE THIS CODE MYSELF (humayd): image adjusts for smaller screens like phones and stuff */
+
+@media (max-width: 768px) {
+    .gallery-image {
+        max-width: 45%;
+        margin: 0 5px;
+    }
+    .outreach3-wide {
+        max-width: 55%; 
+    }
+}
