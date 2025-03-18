@@ -113,6 +113,19 @@ main {
     line-height: 1.6;
 }
 
+
+.subteam-info {
+
+    text-align: center;
+}
+
+
+.subteam-headers {
+    font-size: 2.5em;
+    color: #66cdaa;
+    margin-bottom: 20px;
+}
+
 .hero .cta-button {
     background-color: #66cdaa;
     color: white;
