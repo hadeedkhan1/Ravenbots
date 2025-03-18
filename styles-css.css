@@ -529,13 +529,14 @@ nav a:hover {
 }
 
 .logo {
+    
     font-size: 2em;
     font-weight: bold;
     margin-right: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 0.9%;
+    margin-top: 10%;
 }
 
 nav .dropdown {
@@ -1048,6 +1049,7 @@ b {
     color: #66cdaa;
     font-size: 3.7em;
 }
+
 /* Fix mobile navbar */
 .menu-toggle {
     display: none;
@@ -1066,19 +1068,29 @@ b {
         flex-direction: column;
         position: absolute;
         top: 60px;
-        right: 0;
-        background: #333;
-        width: 200px;
+        right: 50%;
+        background: rgba(40, 55, 52, 0.8);;
+        width: 150px;
         text-align: right;
         padding: 10px;
+        left: 60%;  /* Move to center */
+        transform: translateX(-60%); /* Perfectly center it */
+        max-width: 300px;
+        border-radius: 20px;
+        
         
     }
 
     .nav-links.active {
+        text-align: center;
+        background: #333;
         display: flex;
+        margin-left: 50%;
     }
 
     .nav-links li {
         padding: 10px;
+        background: #333;
     }
 }
+
