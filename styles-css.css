@@ -990,7 +990,7 @@ b {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 900px; /* Increased max-width */
+    max-width: 900px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 20px;
 }
@@ -1025,8 +1025,8 @@ b {
 }
 
 .team-member-text p span {
-    display: block; /* Each detail on a new line */
-    margin-bottom: 3px; /* Space between details */
+    display: block;
+    margin-bottom: 3px; 
 }
 
 .headers-team {
