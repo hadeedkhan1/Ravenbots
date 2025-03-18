@@ -670,7 +670,7 @@ footer .social-links a {
 }
 
 .secondary-button:hover {
-    background-color: #52a98a;
+    background-color: #06db90;
     transform: translateY(-3px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
