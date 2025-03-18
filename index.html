@@ -6,6 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICBC Robotics</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles-css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
@@ -13,6 +15,7 @@
     <header>
         <div class="logo">ICBC Ravenbots</div>
         <nav>
+            <div class="menu-toggle" onclick="toggleMenu()"><strong>☰</strong></div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="donate.html">Donate Now</a></li>
@@ -116,8 +119,7 @@
     <footer>
         <div class="footer-section">
             <h3>Contact Us</h3>
-            <p>Email: robotics@icbrushycreek.org</p>
-            <p>Phone: 340958345</p>
+            <p>Email: <a href="mailto:robotics@icbrushycreek.com">robotics@icbrushycreek.com</a></p>
             <p>1950 Brushy Creek Rd, Cedar Park, TX 78613</p>
             <div class="social-links">
                 <a href="#"><img src="images/medium-icon.png" alt="Medium"></a>
@@ -127,4 +129,9 @@
     </div>
 </footer>
 </body>
+        <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
 </html>

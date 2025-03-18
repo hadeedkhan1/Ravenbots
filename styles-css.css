@@ -113,6 +113,19 @@ main {
     line-height: 1.6;
 }
 
+
+.subteam-info {
+
+    text-align: center;
+}
+
+
+.subteam-headers {
+    font-size: 2.5em;
+    color: #66cdaa;
+    margin-bottom: 20px;
+}
+
 .hero .cta-button {
     background-color: #66cdaa;
     color: white;
@@ -206,7 +219,7 @@ section p {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px;
-    margin: 10px auto; /* Changed from margin: 10px to margin: 10px auto */
+    margin: 10px auto; 
     width: 90%;
     max-width: 750px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -217,7 +230,7 @@ section p {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px;
-    margin: 10px auto; /* Changed from margin: 10px to margin: 10px auto */
+    margin: 10px auto; 
     width: 90%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -516,13 +529,14 @@ nav a:hover {
 }
 
 .logo {
+    
     font-size: 2em;
     font-weight: bold;
     margin-right: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 0.9%;
+    margin-top: 10%;
 }
 
 nav .dropdown {
@@ -596,7 +610,7 @@ footer .social-links a {
 
 .impact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
@@ -1025,13 +1039,58 @@ b {
 }
 
 .team-member-text p span {
-    display: block;
-    margin-bottom: 3px; 
+    display: block; /* Each detail on a new line */
+    margin-bottom: 3px; /* Space between details */
 }
 
 .headers-team {
     text-align: center;
     font-weight: bold;
     color: #66cdaa;
-    font-size: 3em;
+    font-size: 3.7em;
 }
+
+/* Fix mobile navbar */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 50%;
+        background: rgba(40, 55, 52, 0.8);;
+        width: 150px;
+        text-align: right;
+        padding: 10px;
+        left: 60%;  /* Move to center */
+        transform: translateX(-60%); /* Perfectly center it */
+        max-width: 300px;
+        border-radius: 20px;
+        
+        
+    }
+
+    .nav-links.active {
+        text-align: center;
+        background: #333;
+        display: flex;
+        margin-left: 50%;
+    }
+
+    .nav-links li {
+        padding: 10px;
+        background: #333;
+    }
+}
+
