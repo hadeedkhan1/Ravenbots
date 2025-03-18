@@ -657,3 +657,61 @@ b {
 .taxinfo {
     text-align: center;
 }
+
+.sponsor-categories {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sponsor-tier {
+    margin: 0 auto 30px;
+    max-width: 1200px;
+}
+
+.sponsor-tier h2 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+}
+
+.sponsors-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sponsor {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 15px;
+    max-width: 400px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.sponsor:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.sponsor img {
+    max-width: 80%;
+    margin-bottom: 15px;
+}
+
+.sponsor h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.sponsor p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.spon {
+    text-align: center;
+}
