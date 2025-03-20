@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICBC Robotics</title>
     <link rel="stylesheet" href="styles-css.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
+        <div class="logo">ICBC Ravenbots </div>
         <nav>
-            <div class="logo">ICBC Ravenbots</div>
+            <div class="menu-toggle" onclick="toggleMenu()"><strong>☰</strong></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>    
                 <li><a href="donate.html">Donate Now</a></li>
@@ -24,14 +27,14 @@
                 <li><a href="theteam.html">The Team</a></li>
                 <li><a href="competitions.html" class="active">Competitions</a></li>
                 <li><a href="robot.html">Robot</a></li>
-                <li><a href = "outreach.html">Outreach</a></li>
+                <li><a href ="outreach.html">Outreach</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class ="what-is-ftc">
-            <h1>Competitions</h1>
+            <h2><strong>Competitions</strong></h2>
             <p>FTC Competitions are more than just robotics—they’re a journey of innovation, teamwork, and determination. Each season, teams take on an exciting challenge, designing and programming robots to tackle real-world problems in a dynamic, fast-paced game. But FTC is about more than just winning—it’s about pushing boundaries, thinking creatively, and working together to overcome obstacles. Every competition is a chance to showcase hard work, inspire others, and be part of a global community of future engineers, leaders, and changemakers.</p>
             <h2><strong>What is FTC?</strong></h2>
             <p>FIRST Tech Challenge (FTC) is a global robotics competition for students in grades 7-12, where teams design, build, and program robots to complete challenges in an exciting game. Organized by FIRST (For Inspiration and Recognition of Science and Technology), FTC encourages creativity, problem-solving, and teamwork while applying real-world STEM skills. Teams compete in alliances, earn awards for innovation and outreach, and develop engineering and programming expertise. More than just a competition, FTC fosters a community of young engineers and leaders, inspiring the next generation of innovators.</p>
@@ -81,35 +84,31 @@
                 </div>
             </div>
         </section>
+
         <section>
-            <a href="#" class="square-button">
-                <span>Member Application</span>
-            </a>
+
+            <h2>Orange Alliance Profile</h2>
+            <a href="https://theorangealliance.org/teams/27859" class="secondary-button">Link to Profile</a>
         </section>
     
     </main>
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Itkhan ICBC Ravenbots</h3>
-                <p>Absolute domination</p>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Email: ICBC@filler</p>
-                <p>Phone: 340958345</p>
-                <p>1950 Brushy Creek Rd, Cedar Park, TX 78613</p>
-            </div>
-            <div class="footer-section">
-                <h3>Social links</h3>
-                <div class="social-links">
-                    <a href="#">Medium</a>
-                    <a href="#">Discord</a>
-                    <a href="#">Instagram</a>
-                </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:robotics@icbrushycreek.com">robotics@icbrushycreek.com</a></p>
+            <p>1950 Brushy Creek Rd, Cedar Park, TX 78613</p>
+            <div class="social-links">
+                <a href="#"><img src="images/medium-icon.png" alt="Medium"></a>
+                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 </body>
+        <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
 </html>
 

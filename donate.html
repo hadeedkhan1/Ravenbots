@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICBC Robotics</title>
     <link rel="stylesheet" href="styles-css.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
+        <div class="logo">ICBC Ravenbots </div>
         <nav>
-            <div class="logo">ICBC Ravenbots</div>
+            <div class="menu-toggle" onclick="toggleMenu()"><strong>☰</strong></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="donate.html" class="active">Donate Now</a></li>
@@ -31,9 +34,12 @@
 
     <main>
         <section class="page-header">
-            <h1>Donate Now</h1>
-            <p>Your contribution makes a direct impact on our ability to teach the youth about robotics and computers</p>
+            <div>
+                <h1>Donate Now</h1>
+            <p>Your contribution makes a direct impact on our ability to teach the youth about robotics and computers.</p>
+            </div>
         </section>
+        <hr>
         <section class="donation-options">
             <div class="donation-container fade-in">
                 <div class="donation-card">
@@ -46,43 +52,44 @@
                 </div>
             </div>
             <div class="donation-info">
-                <div class="donation-option slide-in">
-                    <h3>One-Time Donation</h3>
-                    <p>Make a one-time donation to support our programs. Your donation will help us purchase equipment, and pay for competition fees. </p>
-                    <a href="https://www.paypal.com/fundraiser/charity/1302331" class="secondary-button">Donate Now</a>
+                <div class="donate-div">
+                    <h2>One-Time Donation</h2>
+                    <p>Make a one-time donation to support our programs. Your donation will help us purchase equipment, and pay for competition fees.</p>
+                    <p><b>If credit/debit chosen, please select robotics on the donate page once redirected.</b></p>
+                    <a href="https://www.paypal.com/fundraiser/charity/1302331" class="secondary-button">Paypal</a> 
+                    <a href="https://us.mohid.co/tx/austin/icbc/masjid/online/donation" class="secondary-button">Credit/Debit</a>
                 </div>
-            
-            <div class="donation-info">
-                <div class="donation-option slide-in">
-                    <h3>Monthly Giving</h3>
+                
+                <div class="donate-div">
+                    <h2>Monthly Giving</h2>
                     <p>Become a mega supporter with monthly donations. Automatic monthly donations provide reliable funding that allows us to plan long-term projects.</p>
-                    <a href="https://www.paypal.com/fundraiser/charity/1302331" class="secondary-button">Become a Monthly Donor</a>
+                    <p><b>Please select robotics on the donate page once redirected.</b></p>
+                    <a href="https://us.mohid.co/tx/austin/icbc/masjid/online/donation" class="secondary-button">Become a Monthly Donor</a>
                 </div>
             </div>
         </section>
-
+        <hr>
+        <div class="taxinfo">
+            <p><b>ICBC is a tax-exempt organization under IRS tax code 501 (C) (3).  EIN 22-3970054.  Donations are tax deductible.</b></p>
+        </div>
     </main>
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Itkhan ICBC Ravenbots</h3>
-                <p>Absolute domination</p>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Email: ICBC@filler</p>
-                <p>Phone: 340958345</p>
-                <p>1950 Brushy Creek Rd, Cedar Park, TX 78613</p>
-            </div>
-            <div class="footer-section">
-                <h3>Social links</h3>
-                <div class="social-links">
-                    <a href="#">Medium</a>
-                    <a href="#">Discord</a>
-                    <a href="#">Instagram</a>
-                </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:robotics@icbrushycreek.com">robotics@icbrushycreek.com</a></p>
+            <p>1950 Brushy Creek Rd, Cedar Park, TX 78613</p>
+            <div class="social-links">
+                <a href="#"><img src="images/medium-icon.png" alt="Medium"></a>
+                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 </body>
+        <script src="https://11ate.com/ravenbots/script.js"></script>
+        <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
 </html>

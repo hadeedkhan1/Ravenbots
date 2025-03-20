@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICBC Robotics</title>
     <link rel="stylesheet" href="styles-css.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 <body>
     <header>
+        <div class="logo">ICBC Ravenbots </div>
         <nav>
-            <div class="logo">ICBC Ravenbots</div>
+            <div class="menu-toggle" onclick="toggleMenu()"><strong>☰</strong></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="donate.html">Donate Now</a></li>
@@ -68,32 +71,34 @@
 
 
         </section>
+        <section>
+            <h2>Engineering Portfolio</h2>
+            <object class="pdf" data="ICBC Semi-State Feb Portfolio 2025.pdf", width="80%", height="1200px">
+
+
+            </object>
+        </section>
         
 
 
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Itkhan ICBC Ravenbots</h3>
-                <p>Absolute domination</p>
-            </div>
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Email: ICBC@filler</p>
-                <p>Phone: 340958345</p>
-                <p>1950 Brushy Creek Rd, Cedar Park, TX 78613</p>
-            </div>
-            <div class="footer-section">
-                <h3>Social links</h3>
-                <div class="social-links">
-                    <a href="#">Medium</a>
-                    <a href="#">Discord</a>
-                    <a href="#">Instagram</a>
-                </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:robotics@icbrushycreek.com">robotics@icbrushycreek.com</a></p>
+            <p>1950 Brushy Creek Rd, Cedar Park, TX 78613</p>
+            <div class="social-links">
+                <a href="#"><img src="images/medium-icon.png" alt="Medium"></a>
+                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 </body>
+        <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
 </html>
