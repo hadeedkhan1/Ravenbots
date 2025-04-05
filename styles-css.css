@@ -1039,8 +1039,8 @@ b {
 }
 
 .team-member-text p span {
-    display: block; /* Each detail on a new line */
-    margin-bottom: 3px; /* Space between details */
+    display: block; 
+    margin-bottom: 3px;
 }
 
 .headers-team {
@@ -1050,14 +1050,12 @@ b {
     font-size: 3.7em;
 }
 
-/* Fix mobile navbar */
 .menu-toggle {
     display: none;
     font-size: 24px;
     cursor: pointer;
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -1073,8 +1071,8 @@ b {
         width: 150px;
         text-align: right;
         padding: 10px;
-        left: 60%;  /* Move to center */
-        transform: translateX(-60%); /* Perfectly center it */
+        left: 60%; 
+        transform: translateX(-60%); 
         max-width: 300px;
         border-radius: 20px;
         
