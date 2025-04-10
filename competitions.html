@@ -44,11 +44,11 @@
         <section class="previous-events">
             <h2>Previous Events</h2>
             
-                <a href="https://theorangealliance.org/events/2425-TX-CSM3">December 2024: Central HSATigers League Meet #2</a>
-               <a href="https://theorangealliance.org/events/2425-TX-CSM4">January 2025: Central HSATigers League Meet #3</a>
-                🎖️ <a href="https://theorangealliance.org/events/2425-TX-CSLT1">January 2025: Central HSATigers & SSTallions League Tournament</a>
-                🏆🎖️ <a href="https://theorangealliance.org/events/2425-TX-CCQ">February 2025: Central Semi - Area Championship Corpus Christi</a>
-               🥈 <a href="https://theorangealliance.org/events/2425-TX-AUS4">March 2025: LightSaders Rookie Invitational</a>
+                <a href="https://theorangealliance.org/events/2425-TX-CSM3" class="secondary-button">December 2024: Central HSATigers League Meet #2</a>
+               <a href="https://theorangealliance.org/events/2425-TX-CSM4" class="secondary-button">January 2025: Central HSATigers League Meet #3</a>
+                🎖️ <a href="https://theorangealliance.org/events/2425-TX-CSLT1" class="secondary-button">January 2025: Central HSATigers & SSTallions League Tournament</a>
+                🏆🎖️ <a href="https://theorangealliance.org/events/2425-TX-CCQ" class="secondary-button">February 2025: Central Semi - Area Championship Corpus Christi</a>
+               🥈 <a href="https://theorangealliance.org/events/2425-TX-AUS4" class="secondary-button">March 2025: LightSaders Rookie Invitational</a>
             </ul>
         </section>
 
@@ -95,31 +95,32 @@
         </div>
     </footer>
 
-    <script>
-        async function loadUpcomingEvents() {
-            const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQYjdf-Ul73Uq7eNbGRcmWxBCfSJUQENoHseaeAa3uchIzA8dYWKH6T1HX0sOHp6a6yxx7fmKVCSV1G/pub?gid=659876098&single=true&output=csv';
-            try {
-                const response = await fetch(sheetUrl);
-                const csvText = await response.text();
-                const lines = csvText.trim().split('\n').slice(1);
+ <script>
+    async function loadUpcomingEvents() {
+        const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQYjdf-Ul73Uq7eNbGRcmWxBCfSJUQENoHseaeAa3uchIzA8dYWKH6T1HX0sOHp6a6yxx7fmKVCSV1G/pub?gid=659876098&single=true&output=csv';
+        
+        try {
+            const response = await fetch(sheetUrl);
+            const csvText = await response.text();
+            const lines = csvText.trim().split('\n').slice(1); // Skip header row if any
 
-                const eventsHTML = lines.map(line => {
-                    const [date, name, link, emoji] = line.split(',');
-                    return `<li>${emoji.trim()} <a href="${link.trim()}" target="_blank">${date.trim()}: ${name.trim()}</a></li>`;
-                }).join('');
+            const eventsHTML = lines.map(line => {
+                return `<li>${line.trim()}</li>`;
+            }).join('');
 
-                document.getElementById('upcoming-events-list').innerHTML = `<ul>${eventsHTML}</ul>`;
-            } catch (error) {
-                document.getElementById('upcoming-events-list').innerHTML = "<p>Error loading events.</p>";
-                console.error("Failed to fetch upcoming events:", error);
-            }
+            document.getElementById('upcoming-events-list').innerHTML = `<ul>${eventsHTML}</ul>`;
+        } catch (error) {
+            document.getElementById('upcoming-events-list').innerHTML = "<p>Error loading events.</p>";
+            console.error("Failed to fetch upcoming events:", error);
         }
+    }
 
-        loadUpcomingEvents();
+    loadUpcomingEvents();
 
-        function toggleMenu() {
-            document.querySelector(".nav-links").classList.toggle("active");
-        }
-    </script>
+    function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("active");
+    }
+</script>
+
 </body>
 </html>
