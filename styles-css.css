@@ -1179,3 +1179,9 @@ b {
     padding: 10px 0;
   }
 }
+
+.pdf-mobile { display: none; }
+@media (max-width: 600px) {
+  .pdf-desktop { display: none; }
+  .pdf-mobile { display: block; text-align: center; margin: 2em 0; }
+}
