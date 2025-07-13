@@ -1140,6 +1140,14 @@ b {
 }
 
 @media (max-width: 600px) {
+  body, html {
+    overflow-x: hidden !important;
+    max-width: 100vw;
+  }
+  .swiper-container {
+    overflow-x: hidden !important;
+    max-width: 100vw;
+  }
   .team-member-container {
     max-width: 98vw;
     padding: 10px;
