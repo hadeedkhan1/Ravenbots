@@ -120,10 +120,6 @@ main {
 }
 
 .subteam-photos {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
     max-width: 400px;
     max-height: 400px;
 }
