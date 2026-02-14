@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICBC Robotics</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #000;
+    color: white;
+    overflow-x: hidden;
+}
+
+.split-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.split {
+    flex: 1;
+    position: relative;
+    transition: all 0.6s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center;
+    padding: 40px;
+}
+
+.split-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.split h1 {
+    font-size: 3rem;
+    transition: 0.4s ease;
+}
+
+.split button {
+    padding: 15px 40px;
+    font-size: 1rem;
+    background: transparent;
+    border: 4px solid #d57070;
+    color: #d57070;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.split button:hover {
+    background: #d57070;
+    color: black;
+}
+
+.split img {
+    width: 360px;
+    max-width: 80%;
+    margin-top: 2px;
+    opacity: 0.9;
+    transition: 0.6s ease;
+}
+
+.split:hover img {
+    transform: scale(1.05);
+}
+
+.left {
+    background: #3a0ca3;
+    color: white;
+}
+
+.right {
+    background: #efdbad;
+    color: black;
+}
+
+.split:hover {
+    flex: 1.4;
+}
+
+.split:hover h1 {
+    transform: scale(1.05);
+}
+
+.donate-fixed {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #800000;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+    z-index: 100;
+    animation: glow 2s infinite;
+}
+
+.donate-fixed:hover {
+    background: white;
+    color: #800000;
+}
+
+#donate-section {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #000000, #111111);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#donate-section h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.donate-links a {
+    padding: 20px 60px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.4s ease;
+}
+
+.donate-links a:hover {
+    background: white;
+    color: black;
+}
+
+#about-section {
+    min-height: 80vh;
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#about-section p {
+    max-width: 800px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cccccc;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #800000; }
+    50% { box-shadow: 0 0 30px #800000; }
+    100% { box-shadow: 0 0 10px #800000; }
+}
+
+@media(max-width: 900px) {
+    .split-container {
+        flex-direction: column;
+    }
+    .split:hover {
+        flex: 1;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="split-container">
+    <div class="split left" onclick="goLeft()">
+        <div class="split-content">
+            <h1>FTC TEAM #27859</h1>
+            <button>IRON UMMAH</button>
+            <img src="image-removebg-preview.png" style="transform: scaleX(-1);" alt="">
+        </div>
+    </div>
+
+    <div class="split right" onclick="goRight()">
+        <div class="split-content">
+            <h1>FTC TEAM #31675</h1>
+            <button>QURANTUM MECHANICS</button>
+            <img src="cursorsite.png" alt="">
+        </div>
+    </div>
+</div>
+
+<div class="donate-fixed" onclick="scrollToDonate()">
+    SUPPORT THE TEAMS
+</div>
+
+<section id="donate-section">
+    <h2>HELP SUPPORT THE TEAMS</h2>
+    <div class="donate-links">
+        <a href="https://us.mohid.co/tx/austin/icbc/masjid/online/donation/QWJUd0wzN1pMMDlCTFpHRVIxSzFrUT09" target="_blank">
+            DONATE TODAY
+        </a>
+    </div>
+</section>
+
+<section id="about-section">
+    <h2>ABOUT ICBC FTC ROBOTICS</h2>
+    <p>
+        ICBC Robotics is a team of high school students who are passionate about robotics and engineering. We compete in the FIRST Tech Challenge, a robotics competition that challenges students to design, build, program, and operate robots to compete in a head-to-head challenge in an alliance format.
+    </p>
+            <a href="mailto:robotics@icbrushycreek.org" style="color: #ef5252;" target="_blank"> robotics@icbrushycreek.org </a>
+
+</section>
+
+<script>
+function goLeft() {
+    window.location.href = "https://27859.icbcrobotics.org";
+}
+
+function goRight() {
+    window.location.href = "https://31675.icbcrobotics.org";
+}
+
+function scrollToDonate() {
+    document.getElementById("donate-section").scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
